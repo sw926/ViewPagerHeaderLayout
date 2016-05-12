@@ -16,13 +16,13 @@ import com.sw926.viewpagerheaderlayout.ScrollingViewDelegate;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SimpleScrollingViewViewFragment extends Fragment implements ScrollingViewChild {
+public class SimpleScrollViewFragment extends Fragment implements ScrollingViewChild {
 
-    private static final String TAG = SimpleScrollingViewViewFragment.class.getSimpleName();
+    private static final String TAG = SimpleScrollViewFragment.class.getSimpleName();
 
     private ScrollView mNestedScrollView;
 
-    public SimpleScrollingViewViewFragment() {
+    public SimpleScrollViewFragment() {
         // Required empty public constructor
     }
 

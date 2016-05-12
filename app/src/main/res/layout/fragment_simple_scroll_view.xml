@@ -3,7 +3,7 @@
     android:id="@+id/nested_scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SimpleScrollingViewViewFragment">
+    tools:context=".SimpleScrollViewFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,28 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text=":23:06.210 1761-1898/? W/System.err:     at com.android.okhttp.internal.Network$1.resolveInetAddresses(Network.java:29)
-05-09 03:23:06.210 1761-1898/? W/System.err:     at com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:188)
-05-09 03:23:06.210 1761-1898/? W/System.err:     at com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:157)
-05-09 03:23:06.210 1761-1898/? W/System.err:     at com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:100)
-05-09 03:23:06.210 1761-1898/? W/System.err:     at com.android.okhttp.internal.http.HttpEngine.createNextConnection(HttpEngine.java:357)
-05-09 03:23:06.210 1761-1898/? W/System.err:     at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:340)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:245)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:218)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.android.gms.http.GoogleHttpClient.a(:com.google.android.gms:948)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.android.gms.http.GoogleHttpClient.a(:com.google.android.gms:766)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.android.gms.http.GoogleHttpClient.execute(:com.google.android.gms:674)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.android.gms.http.GoogleHttpClient.execute(:com.google.android.gms:658)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.r.a.b.a.b.g(:com.google.android.gms:126)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.r.a.b.a.b.c(:com.google.android.gms:172)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.z.a.d.run(:com.google.android.gms:434)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.z.a.c.c(:com.google.android.gms:230)
-05-09 03:23:06.211 1761-1898/? W/System.err:     at com.google.z.a.c.run(:com.google.android.gms:204)" />
+            android:text="@string/long_text" />
     </LinearLayout>
 
 </ScrollView>

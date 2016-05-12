@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     return new SimpleFragment();
                 case 1:
-                    return new SimpleScrollingViewViewFragment();
+                    return new SimpleScrollViewFragment();
                 case 2:
                     return new SimpleListFragment();
                 case 3:
