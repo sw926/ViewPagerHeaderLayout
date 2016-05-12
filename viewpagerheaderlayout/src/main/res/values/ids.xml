@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="vhl_header" type="id" />
+    <item name="vhl_content" type="id" />
+    <item name="vhl_viewpager" type="id" />
+</resources>
