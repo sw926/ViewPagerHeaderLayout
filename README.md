@@ -1,6 +1,6 @@
 可以在ViewPager上添加Header的layout
 #ScreenShot
-![ScreenShot](images/screenshots.webp)
+![ScreenShot](images/screenshot.webp)
 #使用方法
 ```xml
 <com.sw926.viewpagerheaderlayout.ViewPagerHeaderLayout
