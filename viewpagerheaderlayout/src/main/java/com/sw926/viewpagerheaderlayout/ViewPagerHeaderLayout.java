@@ -80,8 +80,8 @@ public class ViewPagerHeaderLayout extends ViewGroup implements NestedScrollingC
         mContentView = findViewById(R.id.vhl_content);
         mViewPager = (ViewPager) findViewById(R.id.vhl_viewpager);
 
-        if (mHeaderView == null || mContentView == null || mViewPager == null) {
-            throw new IllegalStateException("can't find R.id.xx_header/R.id.xx_content");
+        if (mHeaderView == null || mContentView == null) {
+            throw new IllegalStateException("can't find R.id.vhl_header/R.id.vhl_content");
         }
     }
 
@@ -319,11 +319,13 @@ public class ViewPagerHeaderLayout extends ViewGroup implements NestedScrollingC
     }
 
     private boolean canChildScroll(@ScrollingViewChild.SCROLL_DIRECTION int direction) {
-        Object object = mViewPager.getAdapter().instantiateItem(mViewPager, mViewPager.getCurrentItem());
-        if (object != null && object instanceof ScrollingViewChild) {
-            return ((ScrollingViewChild) object).canChildScrollVertically(direction);
+        if (mViewPager != null) {
+            Object object = mViewPager.getAdapter().instantiateItem(mViewPager, mViewPager.getCurrentItem());
+            if (object != null && object instanceof ScrollingViewChild) {
+                return ((ScrollingViewChild) object).canChildScrollVertically(direction);
+            }
         }
-        return false;
+        return ScrollingViewDelegate.canScrollVertical(mContentView, direction);
     }
 
     private int getHeaderHeight() {
