@@ -274,8 +274,14 @@ public class ViewPagerHeaderLayout extends ViewGroup implements NestedScrollingC
                     } else {
                         mScroller.startScroll(0, getScrollY(), 0, getHeaderHeight() - getScrollY(), SCROLL_DURATION);
                     }
-                    ViewCompat.postInvalidateOnAnimation(this);
+                } else {
+                    if (getScrollY() < getHeaderHeight() / 2f) {
+                        mScroller.startScroll(0, getScrollY(), 0, 0 - getScrollY(), SCROLL_DURATION);
+                    } else {
+                        mScroller.startScroll(0, getScrollY(), 0, getHeaderHeight() - getScrollY(), SCROLL_DURATION);
+                    }
                 }
+                ViewCompat.postInvalidateOnAnimation(this);
                 return false;
             }
         }
