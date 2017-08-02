@@ -1,7 +1,11 @@
-可以在ViewPager上添加Header的layout
-#ScreenShot
+# 可以在ViewPager上添加Header的layout
+
+## ScreenShot
+
 ![ScreenShot](images/screenshot.webp)
-#使用方法
+
+## 使用方法
+
 ```xml
 <com.sw926.viewpagerheaderlayout.ViewPagerHeaderLayout
     android:layout_width="match_parent"
@@ -34,5 +38,7 @@
     </RelativeLayout>
 </com.sw926.viewpagerheaderlayout.ViewPagerHeaderLayout>
 ```
-#可能遇到的问题
+
+## 可能遇到的问题
+
 为了支持SwipeRefreshLayout，继承了NestedScrollingChild，实现isNestedScrollingEnabled，返回true，但是没有实现NestedScrollingChild的其他接口，用在NestedScrollingParent中可能会出现问题
